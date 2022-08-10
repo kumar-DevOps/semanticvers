@@ -1,6 +1,6 @@
 pipeline{
-	agent any
-
+    agent any
+   
 	stages{
 	    stage('branch name') {
 		  steps{
@@ -20,8 +20,8 @@ pipeline{
 			   echo "${branch_name}"
 			   sh '''
      			printenv
-				  C:\Users\Admi\.dotnet\tools\dontnet-gitversion /output buildserver
-                  '''
+				  Admi/.dotnet/tools/dontnet-gitversion /output buildserver
+                '''
 			    echo "This is master Branch Executed"
 			    script {
 					def props = readProperties file: 'gitversion.properties'

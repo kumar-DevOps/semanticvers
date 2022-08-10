@@ -24,7 +24,7 @@ pipeline{
                		     '''
 			    echo "This is master Branch Executed"
 			    script {
-					def props = readProperties file: 'gitversion.properties'
+					
 					env.GitVersion_SemVer = props.GitVersion_SemVer
 					env.GitVersion_FullSemVer = props.GitVersion_FullSemVer
 					env.GitVersion_BranchName = props.GitVersion_BranchName
